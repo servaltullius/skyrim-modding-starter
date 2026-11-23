@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__housecarl__housecarl_load_order_status",
+      "mcp__housecarl__housecarl_update_status",
+      "mcp__housecarl__housecarl_records",
+      "mcp__housecarl__housecarl_check",
+      "mcp__housecarl__housecarl_asset_status",
+      "mcp__housecarl__housecarl_nif_inspect",
+      "mcp__housecarl__housecarl_bsa_list",
+      "mcp__housecarl__housecarl_skypatcher_layer",
+      "mcp__housecarl__housecarl_skse",
+      "mcp__housecarl__housecarl_nexus_search",
+      "mcp__housecarl__housecarl_nexus_mod",
+      "mcp__housecarl__housecarl_nexus_check_updates",
+      "mcp__housecarl__housecarl_nexus_identify"
+    ],
+    "deny": [
+      "Edit(//**/My Games/Skyrim*/Saves/**)",
+      "Edit(//**/profiles/*/saves/**)",
+      "Edit(//**/Stock Game/**)",
+      "Edit(//**/steamapps/common/Skyrim Special Edition/**)",
+      "Edit(//**/profiles/*/modlist.txt)",
+      "Edit(//**/profiles/*/plugins.txt)",
+      "Edit(//**/profiles/*/loadorder.txt)"
+    ]
+  }
+}

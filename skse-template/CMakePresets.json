@@ -1,0 +1,30 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 28,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "release",
+      "displayName": "Release (run build.cmd, which sets SKSE_BUILD_ROOT and VCPKG_ROOT)",
+      "generator": "Ninja",
+      "binaryDir": "$env{SKSE_BUILD_ROOT}/${sourceDirName}/build/msvc-$env{VCToolsVersion}",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "PLUGIN_OUTPUT_ROOT": "$env{SKSE_BUILD_ROOT}/${sourceDirName}",
+        "VCPKG_INSTALLED_DIR": "$env{SKSE_BUILD_ROOT}/${sourceDirName}/vcpkg_installed/msvc-$env{VCToolsVersion}",
+        "VCPKG_OVERLAY_TRIPLETS": "${sourceDir}/cmake/triplets",
+        "VCPKG_TARGET_TRIPLET": "x64-windows-static-md"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "release",
+      "configurePreset": "release"
+    }
+  ]
+}

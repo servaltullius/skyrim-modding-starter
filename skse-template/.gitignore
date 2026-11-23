@@ -1,0 +1,9 @@
+# Build output goes outside this folder (SKSE_BUILD_ROOT, default C:\skse-build); keep local tool folders out too.
+build/
+out/
+vcpkg_installed/
+.vs/
+.vscode/
+.idea/
+CMakeUserPresets.json
+*.user
